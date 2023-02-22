@@ -7,6 +7,9 @@ public class Circulo_AVC extends FiguraGeometrica_AVC {
 	public Circulo_AVC(double r, String tipoFigura) {
 		super(tipoFigura);
 		radio = r;
+		if(radio<0) {
+			radio = radio * -1;
+		}
 	}
 
 	@Override
